@@ -1,0 +1,1 @@
+<footer>Stopa strony</footer>

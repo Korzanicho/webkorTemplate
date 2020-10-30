@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    Hej, to jest index.php
+    404, strony nie odnaleziono
 </body>
 </html>

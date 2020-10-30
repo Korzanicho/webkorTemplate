@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    Hej, to jest index.php
+    <?php get_header(); ?>
+    Strona główna
+    <?php get_footer(); ?>
 </body>
 </html>
