@@ -1,1 +1,3 @@
-<footer>Stopa strony</footer>
+        <footer>Stopa strony</footer>
+    </body>
+</html>
