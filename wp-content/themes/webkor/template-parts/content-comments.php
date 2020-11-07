@@ -1,0 +1,1 @@
+<div style="background: url('<?= get_theme_file_uri( 'assets/images/bg.jpg' ); ?>');">Komentarze</div>

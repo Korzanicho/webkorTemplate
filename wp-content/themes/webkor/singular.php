@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Strona singular.php
-</body>
-</html>
+<?php get_header(); ?>
+    <main>
+    <?php
+        if ( have_posts() ) {
+            while ( have_posts() ) {
+                the_post();
+                ?>
+                <article style='border: 1px solid black'>
+                    <?php the_title('<h3>', '</h3>'); ?>
+                    <?php the_content(); ?>
+                </article>
+            <?php
+            }
+        } else {
+            echo 'Brak postów do wyświetlenia';
+        }
+    ?>
+    </main>
+<?php get_footer(); ?>
