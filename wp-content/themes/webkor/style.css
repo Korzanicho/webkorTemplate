@@ -13,3 +13,8 @@
 
     To jest fajny motyw, zapraszam do jego edycji
 */
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
