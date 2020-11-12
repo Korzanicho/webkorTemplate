@@ -1,9 +1,80 @@
-[05-Nov-2020 16:31:54 UTC] PHP Parse error:  syntax error, unexpected end of file in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 2
-[05-Nov-2020 17:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_them_file_path() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\index.php:44
+[12-Nov-2020 17:33:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_year_link(), 0 passed in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 6 and exactly 1 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php:472
 Stack trace:
-#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include()
-#1 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
-#2 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
-#3 {main}
-  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\index.php on line 44
-[07-Nov-2020 18:01:51 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ')' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 4
+#0 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php(6): get_year_link()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php on line 472
+[12-Nov-2020 17:37:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_year_link(), 0 passed in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5 and exactly 1 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php:472
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php(5): get_year_link()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php on line 472
+[12-Nov-2020 17:37:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_year_link(), 0 passed in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5 and exactly 1 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php:472
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php(5): get_year_link()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php on line 472
+[12-Nov-2020 17:43:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_month_link(), 1 passed in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5 and exactly 2 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php:507
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php(5): get_month_link('11')
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\ in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php on line 507
+[12-Nov-2020 17:43:29 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_month_link(), 1 passed in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5 and exactly 2 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php:507
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php(5): get_month_link('11')
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\ in D:\xampp\htdocs\webkorTemplate\wp-includes\link-template.php on line 507
+[12-Nov-2020 17:44:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function http://localhost/webkorTemplate/2020/11/() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php:5
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5
+[12-Nov-2020 17:44:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function http://localhost/webkorTemplate/2020/11/() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php:5
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5
+[12-Nov-2020 17:44:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function http://localhost/webkorTemplate/2020/11/() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php:5
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(732): require()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', false, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\single.php(9): get_template_part('template-parts/...', '')
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 5
+[12-Nov-2020 17:50:18 UTC] PHP Notice:  Array to string conversion in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 6
+[12-Nov-2020 18:02:16 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 13
