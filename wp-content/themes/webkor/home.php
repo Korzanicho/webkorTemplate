@@ -1,5 +1,6 @@
 <?php
     get_header( 'blog' );
+        get_search_form( );
 
         if ( have_posts() ) {
             while ( have_posts() ) {

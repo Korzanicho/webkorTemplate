@@ -1,9 +1,9 @@
 <?php
     get_header( 'blog' );
 
-    printf( 'Wyniki wyszukiwania', get_search_query() );
-
         if ( have_posts() ) {
+
+            echo 'Wyniki wyszukiwania dla: '.get_search_query();
             while ( have_posts() ) {
                 the_post();
                 ?>
