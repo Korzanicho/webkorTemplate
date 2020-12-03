@@ -2,3 +2,8 @@ main {
     max-width: 1048px;
     margin: 0 auto;
 }
+
+.fullWidth {
+    width: 100%;
+    max-width: 100%;
+}

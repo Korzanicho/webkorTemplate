@@ -79,3 +79,4 @@ Stack trace:
 [12-Nov-2020 17:50:18 UTC] PHP Notice:  Array to string conversion in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 6
 [12-Nov-2020 18:02:16 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 13
 [13-Nov-2020 18:09:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 25
+[20-Nov-2020 18:59:56 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\page_sidebar-right.php on line 21

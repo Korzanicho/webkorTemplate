@@ -1,6 +1,12 @@
-<?php get_header(); ?>
-    <main>
-    singular.php
+<?php 
+/*
+    Template Name: Pełna szerokość
+    Template Post Type: page, post
+*/
+
+get_header(); ?>
+    <main class='fullWidth'>
+    page_full-width.php
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {

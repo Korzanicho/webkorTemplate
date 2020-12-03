@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <main>
-    singular.php
+    page.php
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {
