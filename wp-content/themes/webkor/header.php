@@ -8,7 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>
-            <?php the_title(); ?>
-        </h1>
+        <?php 
+            if ( get_header_image() ) {
+        ?>
+            <img src="<?php header_image(); ?>" alt="" width="<?php echo absint(get_custom_header()->width) ?>" height="<?php echo absint(get_custom_header()->height) ?>">
+        <?php
+            }
+        ?>
     </header>

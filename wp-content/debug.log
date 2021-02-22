@@ -80,3 +80,10 @@ Stack trace:
 [12-Nov-2020 18:02:16 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 13
 [13-Nov-2020 18:09:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\content.php on line 25
 [20-Nov-2020 18:59:56 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\template-parts\page_sidebar-right.php on line 21
+[05-Jan-2021 18:48:33 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 34
+[05-Jan-2021 18:49:40 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[05-Jan-2021 18:49:41 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[05-Jan-2021 18:49:50 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[05-Jan-2021 18:49:50 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[05-Jan-2021 18:49:55 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[05-Jan-2021 18:50:13 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
