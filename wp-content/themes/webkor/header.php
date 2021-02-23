@@ -8,6 +8,13 @@
 </head>
 <body>
     <header>
+        <!-- Logo -->
+        <?php 
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            }
+        ?>
+        <!-- Nagłówek -->
         <?php 
             if ( get_header_image() ) {
         ?>

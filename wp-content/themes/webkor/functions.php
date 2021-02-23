@@ -35,4 +35,17 @@ function webkorCustomHeaderSetup() {
     register_default_headers( $headerImages );
 }
 
+function webkorCustomLogoSetup() {
+    $args = [
+        'height' => 260,
+        'width' => 260,
+        'flex-width'    => false,
+        'flex-height'    => true,
+        'unlink-homepage-logo' => true
+    ];
+
+    add_theme_support('custom-logo', $args);
+}
+
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
+add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
