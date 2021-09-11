@@ -47,5 +47,18 @@ function webkorCustomLogoSetup() {
     add_theme_support('custom-logo', $args);
 }
 
+function webkorPostFormatsSetup() {
+    $postFormats = ['aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'];
+
+    add_theme_support( 'post-formats', $postFormats );
+}
+
+function webkorCustomPostFormatsSetup() {
+    add_post_type_support( 'page', 'post-formats' );
+    add_post_type_support( 'post', 'post-formats' );
+}
+
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
 add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
+add_action( 'after_setup_theme', 'webkorPostFormatsSetup' );
+add_action( 'init', 'webkorCustomPostFormatsSetup' );

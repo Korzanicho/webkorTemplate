@@ -6,7 +6,7 @@
                 the_post();
                 ?>
                 <article style='border: 1px solid black'>
-                    <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+                    <?php set_post_format( $post->ID, 'video' ); get_template_part( 'template-parts/content', get_post_format() ); ?>
                 </article>
             <?php
             }
