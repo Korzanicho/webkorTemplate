@@ -1,6 +1,7 @@
 <?php
     get_header( 'blog' );
         get_search_form();
+        echo "Wyniki wyszukiwania dla:".get_search_query();
         if ( have_posts() ) {
             while ( have_posts() ) {
                 the_post();
@@ -17,6 +18,5 @@
         }
 
         ?>
-        <a href="<?= get_permalink(15) ?>">Link</a>
 </body>
 </html>
