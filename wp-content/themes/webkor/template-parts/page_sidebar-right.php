@@ -2,8 +2,7 @@
 /* Template Name: Sidebar po prawej */
 
 get_header(); ?>
-    <main>
-    page_sidebar-right.php
+    <main style="display: flex">
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {
@@ -18,9 +17,10 @@ get_header(); ?>
         } else {
             echo 'Brak postów do wyświetlenia';
         }
-        echo get_page_template_slug();
         
     ?>
-    <div>Sidebar</div>
+    <div>
+        <?php if(is_active_sidebar( 'right-sidebar' )) get_sidebar( 'right-sidebar' ) ?>
+    </div>
     </main>
 <?php get_footer(); ?>

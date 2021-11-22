@@ -58,7 +58,30 @@ function webkorCustomPostFormatsSetup() {
     add_post_type_support( 'post', 'post-formats' );
 }
 
+function webkorWidgetsInit() {
+    register_sidebar( [
+        'name' => 'Stopka',
+        'id' => 'footer',
+        'description' => 'Sidebar wyświetlany w stopce',
+        'before_widget' => '<aside id="%1$s" class="%2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ] );
+
+    register_sidebar( [
+        'name' => 'Prawy sidebar',
+        'id' => 'right-sidebar',
+        'description' => 'Sidebar wyświetlany po prawej stronie',
+        'before_widget' => '<aside id="%1$s" class="%2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ] );
+}
+
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
 add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
 add_action( 'after_setup_theme', 'webkorPostFormatsSetup' );
 add_action( 'init', 'webkorCustomPostFormatsSetup' );
+add_action( 'widgets_init', 'webkorWidgetsInit' );
