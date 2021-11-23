@@ -87,3 +87,26 @@ Stack trace:
 [05-Jan-2021 18:49:50 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
 [05-Jan-2021 18:49:55 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
 [05-Jan-2021 18:50:13 UTC] PHP Notice:  Undefined variable: headersImages in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php on line 35
+[23-Nov-2021 17:14:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Webkor\Theme\Widgets\Testowa' not found in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php:16
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(730): require_once()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', true, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\front-page.php(19): get_footer()
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php on line 16
+[23-Nov-2021 17:18:53 UTC] PHP Warning:  Use of undefined constant DIRECTOR_SEPARATOR - assumed 'DIRECTOR_SEPARATOR' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\inc\autoloader.php on line 13
+[23-Nov-2021 17:22:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Webkor\Theme\Widgets\Testowa' not found in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php:16
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(730): require_once()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', true, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\front-page.php(19): get_footer()
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php on line 16

@@ -1,4 +1,5 @@
 <?php
+require_once(get_template_directory() . '/inc/autoloader.php' );
 
 function wktAddThemeScripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
