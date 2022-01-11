@@ -110,3 +110,41 @@ Stack trace:
 #6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
 #7 {main}
   thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php on line 16
+[13-Dec-2021 17:21:51 UTC] PHP Fatal error:  Uncaught Error: Class '\Webkor\Theme\Widgets\OpeningHours' not found in D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php(115): WP_Widget_Factory->register('\\Webkor\\Theme\\W...')
+#1 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php(83): register_widget('\\Webkor\\Theme\\W...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(287): webkorWidgetsInit('')
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php(1773): do_action('widgets_init')
+#6 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(287): wp_widgets_init('')
+#7 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#8 D:\xampp\htdocs\webkorTemplate\wp-includes\plugin.php( in D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget-factory.php on line 61
+[13-Dec-2021 17:23:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php(115): WP_Widget_Factory->register('\\Webkor\\Theme\\W...')
+#2 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\functions.php(83): register_widget('\\Webkor\\Theme\\W...')
+#3 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(287): webkorWidgetsInit('')
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#5 D:\xampp\htdocs\webkorTemplate\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php(1773): do_action('widgets_init')
+#7 D:\xampp\htdocs\web in D:\xampp\htdocs\webkorTemplate\wp-includes\class-wp-widget.php on line 162
+[13-Dec-2021 17:25:53 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php on line 589
+[13-Dec-2021 17:26:31 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php on line 589
+[13-Dec-2021 17:26:54 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php on line 589
+[13-Dec-2021 17:28:55 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php on line 589
+[13-Dec-2021 17:30:56 UTC] PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\webkorTemplate\wp-includes\widgets.php on line 589
+[13-Dec-2021 17:55:25 UTC] PHP Notice:  Undefined variable: value in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\inc\Widgets\OpeningHours.php on line 65
+[13-Dec-2021 18:10:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Webkor\Theme\Test\Testowa' not found in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php:16
+Stack trace:
+#0 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(730): require_once()
+#1 D:\xampp\htdocs\webkorTemplate\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', true, Array)
+#2 D:\xampp\htdocs\webkorTemplate\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\front-page.php(19): get_footer()
+#4 D:\xampp\htdocs\webkorTemplate\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\webkorTemplate\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\webkorTemplate\index.php(17): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown in D:\xampp\htdocs\webkorTemplate\wp-content\themes\webkor\footer.php on line 16

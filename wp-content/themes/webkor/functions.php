@@ -79,6 +79,8 @@ function webkorWidgetsInit() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>'
     ] );
+
+    register_widget( '\Webkor\Theme\Widgets\OpeningHours' );
 }
 
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
