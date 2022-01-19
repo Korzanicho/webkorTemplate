@@ -83,6 +83,14 @@ function webkorWidgetsInit() {
     register_widget( '\Webkor\Theme\Widgets\OpeningHours' );
 }
 
+function webkorRegesterMenus() {
+    register_nav_menus( [
+        'main-menu' => 'Menu Główne',
+        'footer-menu' => 'Menu w stopce'
+    ] );
+}
+
+add_action( 'init', 'webkorRegesterMenus' );
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
 add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
 add_action( 'after_setup_theme', 'webkorPostFormatsSetup' );
