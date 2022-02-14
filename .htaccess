@@ -5,6 +5,7 @@
 # filtrów WordPressa. Zmiany dokonane bezpośrednio tutaj będą nadpisywane.
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /webkorTemplate/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
