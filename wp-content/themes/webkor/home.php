@@ -16,6 +16,8 @@
             echo 'Brak postów do wyświetlenia';
         }
 
+        the_posts_pagination();
+
         ?>
         <a href="<?= get_permalink(15) ?>">Link</a>
 </body>
