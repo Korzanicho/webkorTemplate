@@ -11,16 +11,24 @@
             <?php
 
                 $args = [
-                    'post_parent'   => get_the_ID(),
-                    'post_type'     => 'attachment'
+                    'post_parent'       => get_the_ID(),
+                    'post_type'         => 'attachment',
+                    'post_mime_type'    => 'image'
                 ];
 
                 $attachments = get_posts($args);
 
+                echo '<h3>Załączone obrazki</h3>';
+                
                 if ($attachments) {
                     foreach ($attachments as $attachment) {
                         $metaData = wp_get_attachment_metadata($attachment->ID);
-                        var_dump($metaData);
+                        echo wp_get_attachment_image( $attachment->ID );
+
+                        echo '<br>';
+
+                        // $image = wp_get_attachment_image_src( $attachment->ID, 'full' );
+                        // echo "<img src='$image[0]' width='$image[1]' height='$image[2]'>";
                     }
                 }
 
