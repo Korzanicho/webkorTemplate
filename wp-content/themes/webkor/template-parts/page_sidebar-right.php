@@ -10,6 +10,12 @@ get_header(); ?>
                 ?>
                 <article style='border: 1px solid black'>
                     <?php the_title('<h3>', '</h3>'); ?>
+
+                    <?php
+                        $musicFile = get_template_directory_uri() . '/assets/sounds/music.mp3';
+                        echo do_shortcode("[audio mp3='$musicFile' loop='on' autoplay=1]");
+                    ?>
+
                     <?php the_content(); ?>
                 </article>
             <?php
