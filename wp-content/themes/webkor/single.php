@@ -18,18 +18,20 @@
 
                 $attachments = get_posts($args);
 
-                echo '<h3>Załączone obrazki</h3>';
                 
                 if ($attachments) {
-                    foreach ($attachments as $attachment) {
-                        $metaData = wp_get_attachment_metadata($attachment->ID);
-                        echo wp_get_attachment_image( $attachment->ID );
+                    echo '<h3>Załączone obrazki</h3>';
 
-                        echo '<br>';
+                    echo do_shortcode( '[gallery orderby="ID" order="DESC" size="medium" columns="2" link="file" itemtag="div" icontag="span" captiontag="p"]' );
+                    // foreach ($attachments as $attachment) {
+                    //     $metaData = wp_get_attachment_metadata($attachment->ID);
+                    //     echo wp_get_attachment_image( $attachment->ID );
 
-                        // $image = wp_get_attachment_image_src( $attachment->ID, 'full' );
-                        // echo "<img src='$image[0]' width='$image[1]' height='$image[2]'>";
-                    }
+                    //     echo '<br>';
+
+                    //     // $image = wp_get_attachment_image_src( $attachment->ID, 'full' );
+                    //     // echo "<img src='$image[0]' width='$image[1]' height='$image[2]'>";
+                    // }
                 }
 
                 wp_link_pages();
