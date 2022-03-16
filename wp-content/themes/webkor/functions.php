@@ -90,9 +90,15 @@ function webkorRegesterMenus() {
     ] );
 }
 
+function webkorPostThumbnailsSetup() {
+    add_theme_support( 'post-thumbnails', ['post'] );
+    add_image_size( 'customthumbnail', 500, 500 );
+}
+
 add_action( 'init', 'webkorRegesterMenus' );
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
 add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
 add_action( 'after_setup_theme', 'webkorPostFormatsSetup' );
 add_action( 'init', 'webkorCustomPostFormatsSetup' );
 add_action( 'widgets_init', 'webkorWidgetsInit' );
+add_action( 'after_setup_theme', 'webkorPostThumbnailsSetup' );

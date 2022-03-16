@@ -1,5 +1,16 @@
 <div class="<?= post_class( 'moja-klasa' ) ?>">
     <?php the_title('<h3>', '</h3>'); ?>
+
+    <?php 
+        if (has_post_thumbnail()) {
+            $futuredImage = get_the_post_thumbnail(null, 'full');
+            $imageUrl = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' )[0];
+            echo "<a href='$imageUrl'>";
+            echo $futuredImage;
+            echo "</a>";
+        } 
+    ?>
+
     <?php the_content(); ?>
     <?php the_author_posts_link( ) ?>
 
