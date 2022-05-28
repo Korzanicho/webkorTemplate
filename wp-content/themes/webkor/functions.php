@@ -95,6 +95,10 @@ function webkorPostThumbnailsSetup() {
     add_image_size( 'customthumbnail', 500, 500 );
 }
 
+function webkorLoadThemeTextDomain() {
+    load_theme_textdomain( 'webkor', get_template_directory() . '/languages' );
+}
+
 add_action( 'init', 'webkorRegesterMenus' );
 add_action( 'after_setup_theme', 'webkorCustomHeaderSetup' );
 add_action( 'after_setup_theme', 'webkorCustomLogoSetup' );
@@ -102,3 +106,4 @@ add_action( 'after_setup_theme', 'webkorPostFormatsSetup' );
 add_action( 'init', 'webkorCustomPostFormatsSetup' );
 add_action( 'widgets_init', 'webkorWidgetsInit' );
 add_action( 'after_setup_theme', 'webkorPostThumbnailsSetup' );
+add_action( 'after_setup_theme', 'webkorLoadThemeTextDomain' );

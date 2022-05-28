@@ -14,7 +14,12 @@
                     <?php } ?>
 
                     <?php the_excerpt(); ?>
-                    <?php the_shortlink( 'Czytaj więcej', 'Przejdź do strony wpisu', '<span>', '</span>' ); ?>
+                    <?php
+                    $numberOfPosts = 1;
+                    printf(_n('One post', '%s posts', $numberOfPosts, 'webkor'), $numberOfPosts);
+                    $readMore = esc_html__('Read more', 'webkor');
+                    ?>
+                    <?php the_shortlink( $readMore, 'Przejdź do strony wpisu', '<span>', '</span>' ); ?>
                 </article>
             <?php
             }
